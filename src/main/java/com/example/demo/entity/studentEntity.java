@@ -13,6 +13,13 @@ public class studententity{
 
     @Email(message"Name is not valid")
     private string email;
+
+    public void setId(long id){
+        this.id=id;
+    }
+    public long getId(long id){
+        return id;
+    }
     public studentEntity()
     {
 
@@ -20,5 +27,7 @@ public class studententity{
     public studentEntity(long id,Stirng name,String emai)
     {
         this.id=id;
+        this.name=name;
+        this.email=email;
     }
 }
